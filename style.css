@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "BPG";
+    src: url(bpg_glaho.ttf);
+}
+
+@font-face {
+    font-family: "Oswald";
+    src: url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+}
+
+@media screen and (max-width: 700px) {
+    header {
+        padding-top: 4% !important;
+        padding-bottom: 4% !important;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start !important;
+    }
+    .navbar h1 {
+        font-size: 16px !important;
+    }
+    .toggle-button {
+        display: flex !important;
+    }
+    .toggle-button:hover {
+        opacity: 1 !important;
+    }
+    .navbar-links {
+        font-size: 12px !important;
+        column-gap: 10px !important;
+        display: none !important;
+        margin: auto !important;
+        padding-top: 5% !important;
+        padding-right: 0 !important;
+
+    }
+    .navbar-links ul {
+        width: 100% !important;
+        justify-content: space-between !important;
+    }
+
+    .navbar-links ul li {
+        text-align: center !important;
+    }
+    .navbar-links ul li a {
+        padding: 0.5rem 1rem !important;
+    }
+
+    .navbar-links.active {
+        display: flex !important;
+    }
+    .wrapper {
+        flex-direction: column !important;
+        align-items: center !important;
+        padding-top: 24% !important;
+        padding-bottom: 10% !important;
+        gap: 25px !important;
+    }
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: "BPG";
+}
+
+p {
+    letter-spacing: 1px;
+    line-height: 160%;
+    color: black;
+}
+
+a {
+    user-select: none;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+li {
+    list-style-type: none;
+}
+
+.overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-size: cover;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    z-index: 1;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+}
+
+.navbar h1 {
+    font-family: "BPG";
+    font-size: 20px;
+    padding-left: 3%;
+    user-select: none;
+}
+
+.navbar-links {
+    padding-right: 3%;
+}
+
+.navbar-links ul {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.toggle-button {
+    position: absolute;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: black;
+    border-radius: 10px;
+}
+
+.FB, .IG {
+    display: flex;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    padding-top: 10%;
+    gap: 25px;
+}
+
+.project {
+    width: 250px;
+    height: 250px;
+    background-color: #282828;
+    user-select: none;
+}
+
+.project:hover {
+    filter: contrast(0.5);
+    transition: 0.2s;
+}
